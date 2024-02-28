@@ -3,6 +3,7 @@ import { partnerQuestions, questions } from './questions/questions';
 import Question from './Question';
 import { useState } from 'react';
 import shuffle from './utils/shuffle';
+import { Form } from 'react-bootstrap';
 
 const randomizedQuestions = shuffle(questions)
 const randomizedPartnerQuestions = shuffle(partnerQuestions)
@@ -18,19 +19,19 @@ function App() {
       <header className="App-header">
 
       </header>
-      <div>
+      <Form>
         {
           randomizedQuestions.map((q, index) => <Question questionInfo={q} id="normal" questionIndex={index} setScoreArray={setScoreArray} />)
         }
-      </div>
-      <div>
+      </Form>
+      <Form>
         {
           randomizedPartnerQuestions.map((q, index) => <Question questionInfo={q} id="partner" questionIndex={index} setScoreArray={setPartnerScoreArray} />)
         }
-      </div>
+      </Form>
       <div>
         <h4>Final Score:</h4>
-        <p>{score}</p>
+        <p>{score} ({score > 0 ? "Yang" : score < 0 ? "Yin" : "Neither???"})</p>
       </div>
     </div>
   );

@@ -48,7 +48,7 @@ export const partnerQuestions: Array<QuestionInfo> = [
     ],
   },
   {
-    q: "I am less passive than my partner.",
+    q: "I am more competitive than my partner.",
     a: [
       { text: "Agree", pointValue: 1 },
       { text: "Neutral", pointValue: 0 },
