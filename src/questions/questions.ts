@@ -29,3 +29,38 @@ export const questions: Array<QuestionInfo> = [
     ],
   },
 ];
+
+export const partnerQuestions: Array<QuestionInfo> = [
+  {
+    q: "I clean up more often than my partner.",
+    a: [
+      { text: "Agree", pointValue: -1 },
+      { text: "Neutral", pointValue: 0 },
+      { text: "Disagree", pointValue: 1 },
+    ],
+  },
+  {
+    q: "I rest more often than my partner.",
+    a: [
+      { text: "Agree", pointValue: -1 },
+      { text: "Neutral", pointValue: 0 },
+      { text: "Disagree", pointValue: 1 },
+    ],
+  },
+  {
+    q: "I am less passive than my partner.",
+    a: [
+      { text: "Agree", pointValue: 1 },
+      { text: "Neutral", pointValue: 0 },
+      { text: "Disagree", pointValue: -1 },
+    ],
+  },
+  {
+    q: "In making decisions, I tend to be more impulsive than my partner.",
+    a: [
+      { text: "Agree", pointValue: 1 },
+      { text: "Neutral", pointValue: 0 },
+      { text: "Disagree", pointValue: -1 },
+    ],
+  },
+];
